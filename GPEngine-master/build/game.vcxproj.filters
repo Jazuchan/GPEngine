@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\game\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CEC3C273-F01B-3365-ADE2-F9F4E355549D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
