@@ -6,5 +6,6 @@
 #include "Segment.h"
 #include "MeshRenderer.h"
 #include "Audio.h"
+#include "Exception.h"
 
 #endif 

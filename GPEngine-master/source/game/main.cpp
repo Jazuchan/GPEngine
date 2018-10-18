@@ -38,8 +38,22 @@ int main()
 	std::shared_ptr<haru::MeshRenderer> mr = o->addSegment<haru::MeshRenderer>();
 	std::shared_ptr<haru::MeshRenderer> mr2 = o->addSegment<haru::MeshRenderer>();
 
-
-	r->start();
+	try
+	{
+		r->start();
+	}
+	catch (haru::Exception& e)
+	{
+		std::cout << "Haru Engine Exception: " << e.what() << std::endl;
+	}
+	catch (std::exception& e)
+	{
+		std::cout << "Exception: " << e.what() << std::endl;
+	}
+	catch (...)
+	{
+		std::cout << "An unknown object was thrown" << std::endl;
+	}
 
 	return 0;
 }

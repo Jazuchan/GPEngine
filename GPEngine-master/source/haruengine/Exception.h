@@ -1,12 +1,20 @@
-#include <vector>
+#include <exception>
+#include <string>
+#include <Windows.h>
 
-class Keyboard
+namespace haru
 {
-public:
-	bool getKey( int keyCode );
-	bool getKeyDown( int keyCode );
-	bool getKeyUp( int keyCode );
 
-private:
-	//std::vector<int> keyCodes();
-};
+	class Exception : public std::exception
+	{
+	public:
+		Exception(std::string message);
+		~Exception() throw();
+
+		const char *what() const noexcept { return message.c_str(); }
+		
+	private:
+		std::string message;
+
+	};
+}

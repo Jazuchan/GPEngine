@@ -13,7 +13,11 @@ namespace haru
 				( *it )->began = true;
 			}
 
-			( *it )->onTick();
+			try
+			{
+				( *it )->onTick();
+			}
+			catch(...){}
 		}
 	}
 
@@ -30,4 +34,6 @@ namespace haru
 			( *it )->onDisplay();
 		}
 	}
+
+	
 }

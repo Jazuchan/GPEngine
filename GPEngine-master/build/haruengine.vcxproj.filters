@@ -31,6 +31,12 @@
     <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Audio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Exception.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Object.h">
@@ -61,6 +67,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Audio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Vertex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\haru.h">

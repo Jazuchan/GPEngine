@@ -52,30 +52,50 @@ source/haruengine/Object.cpp
 
 source/haruengine/Object.h
 
+
 source/haruengine/Root.cpp
 
 source/haruengine/Root.h
+
 source/haruengine/Segment.cpp
 
 source/haruengine/Segment.h
+
 source/haruengine/Domain.cpp
 
 source/haruengine/Domain.h
+
 source/haruengine/Keyboard.cpp
 
 source/haruengine/Keyboard.h
+
 source/haruengine/MeshRenderer.cpp
 source/haruengine/MeshRenderer.h
+
 source/haruengine/ShaderProgram.cpp
 source/haruengine/ShaderProgram.h
+
 source/haruengine/VertexBuffer.cpp
 source/haruengine/VertexBuffer.h
+
 source/haruengine/VertexArray.cpp
 source/haruengine/VertexArray.h
+
 source/haruengine/Audio.cpp
 source/haruengine/Audio.h
+
 source/haruengine/Exception.cpp
 source/haruengine/Exception.h
+
+source/haruengine/Mesh.cpp
+source/haruengine/Mesh.h
+
+
+source/haruengine/Texture.h
+
+
+
+source/haruengine/Vertex.h
 
 source/haruengine/haru.h
 )

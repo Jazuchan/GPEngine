@@ -1,21 +1,20 @@
-#include "Keyboard.h"
+#include "Exception.h"
+#include <iostream>
 
-bool Keyboard::getKey(int keyCode)
+namespace haru
 {
-	return 0;
-}
+	Exception::Exception(std::string message)
+	{
+		message = "Exception thrown";
+	}
 
-bool Keyboard::getKeyDown( int keyCode )
-{
-	return 0;
-}
+	Exception::~Exception() throw()
+	{
+		//throw std::exception();
+	}
 
-bool Keyboard::getKeyUp( int keyCode )
-{
-	return 0;
+	//const char Exception::*what()
+	//{
+	//	
+	//}
 }
-
-//std::vector<int> Keyboard::keyCodes()
-//{
-//	return;
-//}
