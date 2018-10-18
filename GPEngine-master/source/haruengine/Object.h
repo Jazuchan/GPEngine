@@ -6,7 +6,7 @@
   std::shared_ptr<T> rtn = std::make_shared<T>(); \
   rtn->object = self; \
   rtn->began = false; \
-  components.push_back(rtn);
+  segments.push_back(rtn);
 
 namespace haru
 {
@@ -19,7 +19,7 @@ namespace haru
 	public:
 		
 		template <typename T>
-		std::shared_ptr<T> addSegment()
+		std::shared_ptr<T> getSegment()
 		{
 			for(size_t i = 0; i < segments.size(); i++)
 			{

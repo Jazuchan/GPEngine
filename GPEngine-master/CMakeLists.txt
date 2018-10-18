@@ -72,7 +72,12 @@ source/haruengine/VertexBuffer.cpp
 source/haruengine/VertexBuffer.h
 source/haruengine/VertexArray.cpp
 source/haruengine/VertexArray.h
+source/haruengine/Audio.cpp
+source/haruengine/Audio.h
+source/haruengine/Exception.cpp
+source/haruengine/Exception.h
 
+source/haruengine/haru.h
 )
 
   target_link_libraries(game haruengine)

@@ -1,4 +1,8 @@
 #include <SDL2/SDL.h>
+
+#include <AL/al.h>
+#include <AL/alc.h>
+
 #include <memory>
 #include <vector>
 
@@ -11,7 +15,7 @@ namespace haru
 	class Root
 	{
 	public:
-		std::shared_ptr<Root> load();
+		static std::shared_ptr<Root> load();
 
 		void start();
 		void finish();
@@ -24,6 +28,8 @@ namespace haru
 		std::shared_ptr<Keyboard> keyboard();
 		std::weak_ptr<Root> self;
 
-		SDL_Window * window;
+		SDL_Window* window;
+		ALCdevice* device;
+		ALCcontext* context;
 	};
 }

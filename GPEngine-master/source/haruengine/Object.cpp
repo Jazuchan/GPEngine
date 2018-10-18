@@ -19,7 +19,7 @@ namespace haru
 
 	std::shared_ptr<Root> Object::getRoot()
 	{
-		return 0;
+		return root.lock();
 	}
 
 	void Object::display()
