@@ -1,6 +1,20 @@
-﻿  Mesh.cpp
-Keyboard.obj : warning LNK4006: "public: bool __thiscall Keyboard::getKey(int)" (?getKey@Keyboard@@QAE_NH@Z) already defined in Mesh.obj; second definition ignored
-Keyboard.obj : warning LNK4006: "public: bool __thiscall Keyboard::getKeyDown(int)" (?getKeyDown@Keyboard@@QAE_NH@Z) already defined in Mesh.obj; second definition ignored
-Keyboard.obj : warning LNK4006: "public: bool __thiscall Keyboard::getKeyUp(int)" (?getKeyUp@Keyboard@@QAE_NH@Z) already defined in Mesh.obj; second definition ignored
-Keyboard.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
-  haruengine.vcxproj -> \\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\build\Debug\haruengine.lib
+﻿  '\\bournemouth.ac.uk\data\student\home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\build'
+  CMD.EXE was started with the above path as the current directory.
+  UNC paths are not supported.  Defaulting to Windows directory.
+  Building Custom Rule //bournemouth.ac.uk/data/Student/Home/SciTech/s4922815/Desktop/GPEngine/GPEngine-master/CMakeLists.txt
+  CMake does not need to re-run because //bournemouth.ac.uk/data/Student/Home/SciTech/s4922815/Desktop/GPEngine/GPEngine-master/build/CMakeFiles/generate.stamp is up-to-date.
+  Object.cpp
+  Root.cpp
+  Segment.cpp
+  Domain.cpp
+  Keyboard.cpp
+  MeshRenderer.cpp
+  ShaderProgram.cpp
+  VertexBuffer.cpp
+  VertexArray.cpp
+  Audio.cpp
+  Exception.cpp
+  Transform.cpp
+  EScreen.cpp
+\\bournemouth.ac.uk\data\student\home\scitech\s4922815\desktop\gpengine\gpengine-master\source\haruengine\escreen.cpp(1): fatal error C1083: Cannot open include file: 'Mesh.h': No such file or directory
+  Generating Code...

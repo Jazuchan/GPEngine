@@ -87,15 +87,15 @@ source/haruengine/Audio.h
 source/haruengine/Exception.cpp
 source/haruengine/Exception.h
 
-source/haruengine/Mesh.cpp
-source/haruengine/Mesh.h
 
+source/haruengine/Transform.cpp
+source/haruengine/Transform.h
 
-source/haruengine/Texture.h
+source/haruengine/EScreen.cpp
+source/haruengine/EScreen.h
 
-
-
-source/haruengine/Vertex.h
+resources/shaders/simple.frag
+resources/shaders/simple.vert
 
 source/haruengine/haru.h
 )

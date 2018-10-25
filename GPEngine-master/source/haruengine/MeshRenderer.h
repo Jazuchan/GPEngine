@@ -5,20 +5,20 @@
 namespace haru
 {
 
-class VertexArray;
-class ShaderProgram;
+	class VertexArray;
+	class ShaderProgram;
 
-class MeshRenderer : public Segment
-{
-public:
-  void onInit();
+	class MeshRenderer : public Segment
+	{
+	public:
+	  void onInit();
 
-private:
-  void onDisplay();
+	private:
+	  void onDisplay();
 
-  std::shared_ptr<VertexArray> shape;
-  std::shared_ptr<ShaderProgram> shader;
+	  std::shared_ptr<VertexArray> shape;
+	  std::shared_ptr<ShaderProgram> shader;
 
-};
+	};
 
 }

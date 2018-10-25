@@ -34,7 +34,10 @@
     <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Exception.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Mesh.cpp">
+    <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\EScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -72,13 +75,10 @@
     <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Exception.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Mesh.h">
+    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Transform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Texture.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Vertex.h">
+    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\EScreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\haru.h">
@@ -87,6 +87,10 @@
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\resources\shaders\simple.frag" />
+    <None Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\resources\shaders\simple.vert" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">

@@ -283,10 +283,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Audio.h" />
     <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Exception.cpp" />
     <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Exception.h" />
-    <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Mesh.cpp" />
-    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Mesh.h" />
-    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Texture.h" />
-    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Vertex.h" />
+    <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Transform.cpp" />
+    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\Transform.h" />
+    <ClCompile Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\EScreen.cpp" />
+    <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\EScreen.h" />
+    <None Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\resources\shaders\simple.frag" />
+    <None Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\resources\shaders\simple.vert" />
     <ClInclude Include="\\bournemouth.ac.uk\data\Student\Home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\source\haruengine\haru.h" />
   </ItemGroup>
   <ItemGroup>
