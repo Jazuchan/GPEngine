@@ -1,5 +1,7 @@
-#include "Vertex.h"
-#include "Texture.h"
+#include "Transform.h"
+
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
 
 #include <iostream>
 #include <sstream>
@@ -8,22 +10,12 @@
 
 namespace haru
 {
-	class Mesh
+	class EScreen
 	{
 	public:
-		Mesh();
-		void Draw();
-
-		std::vector<Vertex> vertices;
-		std::vector<unsigned int> indices;
-		std::vector<Texture> textures;
-
-		unsigned int VAO;
+		EScreen();
 
 	private:
-		void setUpMesh();
 
-		unsigned int VBO, EBO;
 	};
 }
-//https://learnopengl.com/code_viewer_gh.php?code=includes/learnopengl/mesh.h

@@ -1,20 +1,10 @@
-#include "Mesh.h"
+#include "EScreen.h"
 
 
 namespace haru
 {
-	Mesh::Mesh()
+	EScreen::EScreen()
 	{
 
-	}
-
-	void Mesh::Draw()
-	{
-
-	}
-
-	void Mesh::setUpMesh()
-	{
-
-	}
+	};
 }
