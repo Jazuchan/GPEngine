@@ -1,2 +1,8 @@
-﻿  Checking Build System
-  CMake does not need to re-run because C:/Users/Jas/Documents/GamesProgramming/Yr3/GameEngine/GPEngine/GPEngine-master/build/CMakeFiles/generate.stamp is up-to-date.
+﻿  '\\bournemouth.ac.uk\data\student\home\SciTech\s4922815\Desktop\GPEngine\GPEngine-master\build'
+  CMD.EXE was started with the above path as the current directory.
+  UNC paths are not supported.  Defaulting to Windows directory.
+  Checking Build System
+  CMake is re-running because generate.stamp.list is missing.
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: //bournemouth.ac.uk/data/Student/Home/SciTech/s4922815/Desktop/GPEngine/GPEngine-master/build

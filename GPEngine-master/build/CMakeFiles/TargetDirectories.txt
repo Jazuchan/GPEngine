@@ -1,4 +1,4 @@
-C:/Users/Jas/Documents/GamesProgramming/Yr3/GameEngine/GPEngine/GPEngine-master/build/CMakeFiles/game.dir
-C:/Users/Jas/Documents/GamesProgramming/Yr3/GameEngine/GPEngine/GPEngine-master/build/CMakeFiles/haruengine.dir
-C:/Users/Jas/Documents/GamesProgramming/Yr3/GameEngine/GPEngine/GPEngine-master/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Jas/Documents/GamesProgramming/Yr3/GameEngine/GPEngine/GPEngine-master/build/CMakeFiles/ZERO_CHECK.dir
+//bournemouth.ac.uk/data/Student/Home/SciTech/s4922815/Desktop/GPEngine/GPEngine-master/build/CMakeFiles/game.dir
+//bournemouth.ac.uk/data/Student/Home/SciTech/s4922815/Desktop/GPEngine/GPEngine-master/build/CMakeFiles/haruengine.dir
+//bournemouth.ac.uk/data/Student/Home/SciTech/s4922815/Desktop/GPEngine/GPEngine-master/build/CMakeFiles/ALL_BUILD.dir
+//bournemouth.ac.uk/data/Student/Home/SciTech/s4922815/Desktop/GPEngine/GPEngine-master/build/CMakeFiles/ZERO_CHECK.dir

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Jas/Documents/GamesProgramming/Yr3/GameEngine/GPEngine/GPEngine-master
+# Install script for directory: //bournemouth.ac.uk/data/Student/Home/SciTech/s4922815/Desktop/GPEngine/GPEngine-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Jas/Documents/GamesProgramming/Yr3/GameEngine/GPEngine/GPEngine-master/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "//bournemouth.ac.uk/data/Student/Home/SciTech/s4922815/Desktop/GPEngine/GPEngine-master/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -24,11 +24,14 @@ void MeshRenderer::onInit()
   shape->setBuffer("in_Position", positions);
   shape->setBuffer("in_Color", colors);
 
+
   shader = std::make_shared<ShaderProgram>("../resources/shaders/simple.vert", "../resources/shaders/simple.frag");
 }
 
 void MeshRenderer::onDisplay()
 {
+  ;
+  shader->setUniform("in_View", glm::mat4(1.0f));
   shader->setUniform("in_Model", glm::mat4(1.0f)); //getsegment.transfrom->
   shader->setUniform("in_Projection", glm::mat4(1.0f)); 
   shader->draw(*shape);
