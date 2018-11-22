@@ -1,21 +1,39 @@
 #include "Keyboard.h"
 
-bool Keyboard::getKey(int keyCode)
+void Keyboard::Init()
 {
-	return 0;
+	SDL_GetKeyboardState(&m_keyCodes);
+	m_currentKey = new Uint8[m_keyCodes];
+	m_previousKey = new Uint8[m_keyCodes];
+
+	std::memcpy(m_currentKey, SDL_GetKeyboardState(NULL), m_keyCodes);
+	std::memcpy(m_previousKey, m_currentKey, m_keyCodes);
 }
 
-bool Keyboard::getKeyDown( int keyCode )
+void Keyboard::Finish()
 {
-	return 0;
+	delete[] m_currentKey;
+	delete[] m_previousKey;
 }
 
-bool Keyboard::getKeyUp( int keyCode )
+void Keyboard::Update()
 {
-	return 0;
+	std::memcpy(m_previousKey, m_currentKey, m_keyCodes);  //gets previous key
+	std::memcpy(m_currentKey, SDL_GetKeyboardState(NULL), m_keyCodes);
+
 }
 
-//std::vector<int> Keyboard::keyCodes()
-//{
-//	return;
-//}
+bool Keyboard::GetKey(int _keyCode)  //returns the key to true when pressed
+{
+	return m_currentKey[_keyCode] && !m_previousKey[_keyCode];
+}
+
+bool Keyboard::GetKeyDown( int _keyCode )  //continually returns true
+{
+	return m_currentKey[_keyCode];
+}
+
+bool Keyboard::GetKeyUp( int _keyCode )
+{
+	return m_currentKey[_keyCode] && !m_previousKey[_keyCode];
+}

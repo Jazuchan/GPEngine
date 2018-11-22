@@ -1,6 +1,6 @@
 #include <exception>
 #include <string>
-#include <Windows.h>
+//#include <Windows.h>
 
 namespace haru
 {
@@ -8,13 +8,13 @@ namespace haru
 	class Exception : public std::exception
 	{
 	public:
-		Exception(std::string message);
+		Exception(std::string _message);
 		~Exception() throw();
 
-		const char *what() const noexcept { return message.c_str(); }
+		const char *m_what() const noexcept { return m_message.c_str(); }
 		
 	private:
-		std::string message;
+		std::string m_message;
 
 	};
 }

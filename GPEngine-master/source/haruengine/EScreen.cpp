@@ -3,8 +3,15 @@
 
 namespace haru
 {
-	EScreen::EScreen()
+	void EScreen::OnTick()
 	{
+		
 
-	};
+	}
+
+
+	void EScreen::MouseMove()
+	{
+		
+	}
 }

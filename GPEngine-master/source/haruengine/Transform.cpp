@@ -2,27 +2,19 @@
 
 namespace haru
 {
-	Transform::Transform()
+
+	void Transform::SetPos( glm::vec3 _pos )
 	{
 
 	}
 
-	void Transform::Update(float deltaTs)
+	void Transform::SetRot( glm::vec3 _rot )
 	{
-		while (rot.x > (3.14159265358979323846 * 2.0))
-		{
-			rot.x += (float)(3.14159265358979323846 * 2.0);
-		}
 
-		while(rot.y > ( 3.14159265358979323846 * 2.0 ))
-		{
-			rot.y -= ( float ) ( 3.14159265358979323846 * 2.0 );
-		}
+	}
 
-		while(rot.z > ( 3.14159265358979323846 * 2.0 ))
-		{
-			rot.z -= ( float ) ( 3.14159265358979323846 * 2.0 );
-		}
+	void Transform::SetSca( glm::vec3 _sca )
+	{
 
 	}
 }

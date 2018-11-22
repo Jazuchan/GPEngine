@@ -2,53 +2,28 @@
 
 #include <iostream>
 
-class CheckScreen : public haru::Segment
-{
-public:
-	void onInit( std::string color )
-	{
-		//std::cout << "onInit " << color << std::endl;
-	}
-
-	void onBegin()
-	{
-		//std::cout << "onBegin" << std::endl;
-	}
-
-	void onTick()
-	{
-		//std::cout << "onTick" << std::endl;
-	}
-
-	void onDisplay()
-	{
-		//std::cout << "onTick" << std::endl;
-	}
-};
-
 int main()
 {
-	std::shared_ptr<haru::Root> r = haru::Root::load();
-	std::shared_ptr<haru::Object> o = r->addObject();
+	std::shared_ptr<haru::Root> m_r = haru::Root::Load();
+	std::shared_ptr<haru::Object> m_o = m_r->AddObject();
 
-	std::shared_ptr<haru::Audio> a = std::make_shared<haru::Audio>("../shootingStar.ogg");
-	a->play();
+	std::shared_ptr<haru::Audio> m_a = std::make_shared<haru::Audio>("../resources/audio/shootingStar.ogg");
+	m_a->Play();
 
-	std::shared_ptr<CheckScreen> cs = o->addSegment<CheckScreen>( "Green" );
-	std::shared_ptr<haru::MeshRenderer> mr = o->addSegment<haru::MeshRenderer>();
-	std::shared_ptr<haru::MeshRenderer> mr2 = o->addSegment<haru::MeshRenderer>();
+	std::shared_ptr<haru::MeshRenderer> m_mr = m_o->AddSegment<haru::MeshRenderer>();
+	std::shared_ptr<haru::MeshRenderer> m_mr2 = m_o->AddSegment<haru::MeshRenderer>();
 
 	try
 	{
-		r->start();
+		m_r->Start();
 	}
-	catch (haru::Exception& e)
+	catch (haru::Exception& m_e)
 	{
-		std::cout << "Haru Engine Exception: " << e.what() << std::endl;
+		std::cout << "Haru Engine Exception: " << m_e.what() << std::endl;
 	}
-	catch (std::exception& e)
+	catch (std::exception& m_e)
 	{
-		std::cout << "Exception: " << e.what() << std::endl;
+		std::cout << "Exception: " << m_e.what() << std::endl;
 	}
 	catch (...)
 	{

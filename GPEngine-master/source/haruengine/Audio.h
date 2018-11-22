@@ -7,14 +7,14 @@ namespace haru
 
 	class Audio
 	{
-		std::shared_ptr<AudioImpl> impl;
+		std::shared_ptr<AudioImpl> m_impl;
 
 	public:
 		Audio();
-		Audio(std::string path);
+		Audio(std::string _path);
 
-		void load(std::string path);
-		void play();
-		void play(float vol, float varMin, float varMax);
+		void Load(std::string _path);
+		void Play();
+		void Play(float _vol, float _varMin, float _varMax);
 	};
 }

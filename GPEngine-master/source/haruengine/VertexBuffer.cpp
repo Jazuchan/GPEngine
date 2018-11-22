@@ -3,79 +3,95 @@
 namespace haru
 {
 
-VertexBuffer::VertexBuffer() : components(0), dirty(false)
-{
-  glGenBuffers(1, &id);
+	VertexBuffer::VertexBuffer() : m_components(0), m_dirty(false)
+	{
+	  glGenBuffers(1, &m_id);
 
-  if(!id)
-  {
-    throw std::exception();
-  }
-}
+	  if(!m_id)
+	  {
+		throw std::exception();
+	  }
+	}
 
-void VertexBuffer::add(glm::vec3 value)
-{
-  if(!components)
-  {
-    components = 3;
-  }
+	void VertexBuffer::Add( glm::vec2 _value )
+	{
+		if(!m_components)
+		{
+			m_components = 2;
+		}
 
-  if(components != 3)
-  {
-    throw std::exception();
-  }
+		if(m_components != 2)
+		{
+			throw std::exception();
+		}
 
-  data.push_back(value.x);
-  data.push_back(value.y);
-  data.push_back(value.z);
-  dirty = true;
-}
+		m_data.push_back( _value.x );
+		m_data.push_back( _value.y );
+		m_dirty = true;
+	}
 
-void VertexBuffer::add(glm::vec4 value)
-{
-  if(!components)
-  {
-    components = 4;
-  }
+	void VertexBuffer::Add(glm::vec3 _value)
+	{
+	  if(!m_components)
+	  {
+		m_components = 3;
+	  }
 
-  if(components != 4)
-  {
-    throw std::exception();
-  }
+	  if(m_components != 3)
+	  {
+		throw std::exception();
+	  }
 
-  data.push_back(value.x);
-  data.push_back(value.y);
-  data.push_back(value.z);
-  data.push_back(value.w);
-  dirty = true;
-}
+	  m_data.push_back(_value.x);
+	  m_data.push_back(_value.y);
+	  m_data.push_back(_value.z);
+	  m_dirty = true;
+	}
 
-int VertexBuffer::getDataSize()
-{
-  return data.size();
-}
+	void VertexBuffer::Add(glm::vec4 _value)
+	{
+	  if(!m_components)
+	  {
+		m_components = 4;
+	  }
 
-int VertexBuffer::getComponents()
-{
-  if(!components)
-  {
-    throw std::exception();
-  }
+	  if(m_components != 4)
+	  {
+		throw std::exception();
+	  }
 
-  return components;
-}
+	  m_data.push_back(_value.x);
+	  m_data.push_back(_value.y);
+	  m_data.push_back(_value.z);
+	  m_data.push_back(_value.w);
+	  m_dirty = true;
+	}
 
-GLuint VertexBuffer::getId()
-{
-  if(dirty)
-  {
-    glBindBuffer(GL_ARRAY_BUFFER, id);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * data.size(), &data.at(0), GL_STATIC_DRAW);
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-    dirty = false;
-  }
+	int VertexBuffer::GetDataSize()
+	{
+	  return m_data.size();
+	}
 
-  return id;
-}
+	int VertexBuffer::GetComponents()
+	{
+	  if(!m_components)
+	  {
+		throw std::exception();
+	  }
 
+	  return m_components;
+	}
+
+	GLuint VertexBuffer::GetId()
+	{
+	  if(m_dirty)
+	  {
+		glBindBuffer(GL_ARRAY_BUFFER, m_id);
+		glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * m_data.size(), &m_data.at(0), GL_STATIC_DRAW);
+		glBindBuffer(GL_ARRAY_BUFFER, 0);
+		m_dirty = false;
+	  }
+
+	  return m_id;
+	}
 }

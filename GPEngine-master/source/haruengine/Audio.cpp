@@ -10,115 +10,115 @@ namespace haru
 {
 	struct AudioImpl
 	{
-		ALuint id;
+		ALuint m_id;
 
 		~AudioImpl()
 		{
-			alDeleteBuffers(1, &id);
+			alDeleteBuffers(1, &m_id);
 		}
 
-		void load_ogg(std::string fileName, std::vector<char> &buffer,
-			ALenum &format, ALsizei &freq)
+		void LoadOgg(std::string _fileName, std::vector<char> &_buffer,
+			ALenum &_format, ALsizei &_freq)
 		{
-			int endian = 0;
-			int bitStream = 0;
-			long bytes = 0;
-			char array[2048] = { 0 };
+			int m_endian = 0;
+			int m_bitStream = 0;
+			long m_bytes = 0;
+			char m_array[2048] = { 0 };
 
-			vorbis_info *pInfo = NULL;
-			OggVorbis_File oggFile = { 0 };
+			vorbis_info *m_pInfo = NULL;
+			OggVorbis_File m_oggFile = { 0 };
 
-			if (ov_fopen(fileName.c_str(), &oggFile) != 0)
+			if (ov_fopen(_fileName.c_str(), &m_oggFile) != 0)
 			{
-				std::cout << "Failed to open file '" << fileName << "' for decoding" << std::endl;
+				std::cout << "Failed to open file '" << _fileName << "' for decoding" << std::endl;
 				throw std::exception();
 			}
 
-			pInfo = ov_info(&oggFile, -1);
+			m_pInfo = ov_info(&m_oggFile, -1);
 
-			if (pInfo->channels == 1)
+			if (m_pInfo->channels == 1)
 			{
-				format = AL_FORMAT_MONO16;
+				_format = AL_FORMAT_MONO16;
 			}
 			else
 			{
-				format = AL_FORMAT_STEREO16;
+				_format = AL_FORMAT_STEREO16;
 			}
 
-			freq = pInfo->rate;
+			_freq = m_pInfo->rate;
 
 			while (true)
 			{
-				bytes = ov_read(&oggFile, array, 2048, endian, 2, 1, &bitStream);
+				m_bytes = ov_read(&m_oggFile, m_array, 2048, m_endian, 2, 1, &m_bitStream);
 
-				if (bytes < 0)
+				if (m_bytes < 0)
 				{
-					ov_clear(&oggFile);
-					std::cout << "Failed to decode file '" << fileName << "'." << std::endl;
+					ov_clear(&m_oggFile);
+					std::cout << "Failed to decode file '" << _fileName << "'." << std::endl;
 					throw std::exception();
 				}
-				else if (bytes == 0)
+				else if (m_bytes == 0)
 				{
 					break;
 				}
 
-				buffer.insert(buffer.end(), array, array + bytes);
+				_buffer.insert(_buffer.end(), m_array, m_array + m_bytes);
 			}
 
-			ov_clear(&oggFile);
+			ov_clear(&m_oggFile);
 		}
 	};
 
 	Audio::Audio() { }
 
-	Audio::Audio(std::string path)
+	Audio::Audio(std::string _path)
 	{
-		load(path);
+		Load(_path);
 	}
 
-	void Audio::load(std::string path)
+	void Audio::Load(std::string _path)
 	{
-		impl = std::make_shared<AudioImpl>();
+		m_impl = std::make_shared<AudioImpl>();
 
-		ALenum format = 0;
-		ALsizei freq = 0;
-		std::vector<char> bufferData;
+		ALenum m_format = 0;
+		ALsizei m_freq = 0;
+		std::vector<char> m_bufferData;
 
-		alGenBuffers(1, &impl->id);
+		alGenBuffers(1, &m_impl->m_id);
 
-		impl->load_ogg(path.c_str(), bufferData, format, freq);
+		m_impl->LoadOgg(_path.c_str(), m_bufferData, m_format, m_freq);
 
-		alBufferData(impl->id, format, &bufferData[0],
-			static_cast<ALsizei>(bufferData.size()), freq);
+		alBufferData(m_impl->m_id, m_format, &m_bufferData[0],
+			static_cast<ALsizei>( m_bufferData.size()), m_freq);
 	}
 
-	void Audio::play()
+	void Audio::Play()
 	{
-		ALuint sid = 0;
-		alGenSources(1, &sid);
+		ALuint m_sid = 0;
+		alGenSources(1, &m_sid);
 		alListener3f(AL_POSITION, 0.0f, 0.0f, 0.0f);
-		alSource3f(sid, AL_POSITION, 0.0f, 0.0f, 0.0f);
-		alSourcei(sid, AL_BUFFER, impl->id);
-		alSourcePlay(sid);
+		alSource3f( m_sid, AL_POSITION, 0.0f, 0.0f, 0.0f);
+		alSourcei( m_sid, AL_BUFFER, m_impl->m_id);
+		alSourcePlay( m_sid);
 
 		//audioSources.push_back(sid);
 	}
 
-	void Audio::play(float vol, float varMin, float varMax)
+	void Audio::Play(float _vol, float _varMin, float _varMax)
 	{
 		
-		varMin *= 1000.0f;
-		varMax *= 1000.0f;
-		float variance = (std::rand() % ((int)varMin + 1 - (int)varMax) + (int)varMin) / 1000.0f;
+		_varMin *= 1000.0f;
+		_varMax *= 1000.0f;
+		float m_variance = (std::rand() % ((int)_varMin + 1 - (int)_varMax) + (int)_varMin) / 1000.0f;
 		//return std::rand() % (max + 1 - min) + min;
-		ALuint sid = 0;
-		alGenSources(1, &sid);
+		ALuint m_sid = 0;
+		alGenSources(1, &m_sid);
 		alListener3f(AL_POSITION, 0.0f, 0.0f, 0.0f);
-		alSource3f(sid, AL_POSITION, 0.0f, 0.0f, 0.0f);
-		alSourcei(sid, AL_BUFFER, impl->id);
-		alSourcef(sid, AL_PITCH, variance);
-		alSourcef(sid, AL_GAIN, vol);
-		alSourcePlay(sid);
+		alSource3f( m_sid, AL_POSITION, 0.0f, 0.0f, 0.0f);
+		alSourcei( m_sid, AL_BUFFER, m_impl->m_id);
+		alSourcef( m_sid, AL_PITCH, m_variance);
+		alSourcef( m_sid, AL_GAIN, _vol);
+		alSourcePlay( m_sid);
 
 		//audioSources.push_back(sid);
 	}

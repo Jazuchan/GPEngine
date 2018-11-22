@@ -5,22 +5,21 @@
 
 namespace haru
 {
-
 	class VertexBuffer
 	{
-	  GLuint id;
-	  int components;
-	  std::vector<GLfloat> data;
-	  bool dirty;
+	  GLuint m_id;
+	  int m_components;
+	  std::vector<GLfloat> m_data;
+	  bool m_dirty;
 
 	public:
 	  VertexBuffer();
-	  void add(glm::vec3 value);
-	  void add(glm::vec4 value);
-	  int getComponents();
-	  int getDataSize();
-	  GLuint getId();
+	  void Add(glm::vec2 _value);
+	  void Add(glm::vec3 _value);
+	  void Add(glm::vec4 _value);
+	  int GetComponents();
+	  int GetDataSize();
+	  GLuint GetId();
 
 	};
-
 }

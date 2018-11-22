@@ -3,18 +3,18 @@
 
 namespace haru
 {
-	Exception::Exception(std::string message)
+	Exception::Exception(std::string _message)
 	{
-		message = "Exception thrown";
+		_message = "Exception thrown";
 	}
 
 	Exception::~Exception() throw()
 	{
-		//throw std::exception();
+		throw std::exception();
 	}
 
-	//const char Exception::*what()
+	//const char Exception::*m_what()
 	//{
 	//	
 	//}
-}
+} 

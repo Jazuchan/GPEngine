@@ -3,8 +3,8 @@
 class Domain
 {
 public:
-	float getDeltaTime();
+	float GetDeltaTime();
 
 private:
-	float deltaTime();
+	float DeltaTime();
 };

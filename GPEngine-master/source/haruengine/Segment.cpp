@@ -1,5 +1,6 @@
 #include "Segment.h"
 #include "Object.h"
+#include "Root.h"
 
 namespace haru
 {
@@ -7,38 +8,38 @@ namespace haru
 	{
 	}
 
-	void Segment::onInit()
+	void Segment::OnInit()
 	{
 	}
 
-	void Segment::onBegin()
+	void Segment::OnBegin()
 	{
 	}
 
-	void Segment::onTick()
+	void Segment::OnTick()
 	{
 	}
 
-	void Segment::onDisplay()
+	void Segment::OnDisplay()
 	{
 	}
 
-	std::shared_ptr<Object> Segment::getObject()
+	std::shared_ptr<Object> Segment::GetObject()
 	{
-		return object.lock();
+		return m_object.lock();
 	}
 
-	std::shared_ptr<Root> Segment::getRoot()
+	std::shared_ptr<Root> Segment::GetRoot()
 	{
-		return getObject()->getRoot();
+		return GetObject()->GetRoot();
 	}
 
-	std::shared_ptr<Keyboard> Segment::getKeyboard()
+	std::shared_ptr<Keyboard> Segment::GetKeyboard()
 	{
 		return 0;
 	}
 
-	std::shared_ptr<Domain> Segment::getDomain()
+	std::shared_ptr<Domain> Segment::GetDomain()
 	{
 		return 0;
 	}

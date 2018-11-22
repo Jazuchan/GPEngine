@@ -2,36 +2,36 @@
 
 namespace haru
 {
-	void Object::tick()
+	void Object::Tick()
 	{
-		for( std::vector<std::shared_ptr<Segment> >::iterator it = segments.begin();
-		it != segments.end(); it++ )
+		for( std::vector<std::shared_ptr<Segment> >::iterator it = m_segments.begin();
+		it != m_segments.end(); it++ )
 		{
-			if(!( *it )->began)
+			if(!( *it )->m_began)
 			{
-				( *it )->onBegin();
-				( *it )->began = true;
+				( *it )->OnBegin();
+				( *it )->m_began = true;
 			}
 
 			try
 			{
-				( *it )->onTick();
+				( *it )->OnTick();
 			}
 			catch(...){}
 		}
 	}
 
-	std::shared_ptr<Root> Object::getRoot()
+	std::shared_ptr<Root> Object::GetRoot()
 	{
-		return root.lock();
+		return m_root.lock();
 	}
 
-	void Object::display()
+	void Object::Display()
 	{
-		for(std::vector<std::shared_ptr<Segment> >::iterator it = segments.begin();
-			it != segments.end(); it++)
+		for(std::vector<std::shared_ptr<Segment> >::iterator it = m_segments.begin();
+			it != m_segments.end(); it++)
 		{
-			( *it )->onDisplay();
+			( *it )->OnDisplay();
 		}
 	}
 

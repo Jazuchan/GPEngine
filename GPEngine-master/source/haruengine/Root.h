@@ -11,25 +11,30 @@ namespace haru
 	class Object;
 	class Domain;
 	class Keyboard;
+	class ShaderProgram;
+	class Mouse;
 
 	class Root
 	{
 	public:
-		static std::shared_ptr<Root> load();
+		static std::shared_ptr<Root> Load();
 
-		void start();
-		void finish();
-		std::shared_ptr<Object> addObject();
+		void Start();
+		void Finish();
+		std::shared_ptr<Object> AddObject();
 
+		
 	private:
-		bool active;
-		std::vector<std::shared_ptr<Object>> objects;
-		std::shared_ptr<Domain> domain();
-		std::shared_ptr<Keyboard> keyboard();
-		std::weak_ptr<Root> self;
+		bool m_active;
+		std::shared_ptr<Mouse> m_mouse;
+		std::shared_ptr<ShaderProgram> m_shader;
+		std::vector<std::shared_ptr<Object>> m_objects;
+		std::weak_ptr<Root> m_self;
+		std::shared_ptr<Domain> Domain();
+		std::shared_ptr<Keyboard> Keyboard();
 
-		SDL_Window* window;
-		ALCdevice* device;
-		ALCcontext* context;
+		SDL_Window* m_window;
+		ALCdevice* m_device;
+		ALCcontext* m_context;
 	};
 }

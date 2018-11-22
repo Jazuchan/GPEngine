@@ -1,30 +1,39 @@
+#include <SDL2/SDL.h>
 #include <GL/glew.h>
-
+#include <glm/ext.hpp>
+#include <exception>
+#include <iostream>
 #include "Root.h"
 #include "Object.h"
+#include "ShaderProgram.h"
+#include "Texture.h"
+#include "VertexBuffer.h"
+#include "VertexArray.h"
+#include "MeshRenderer.h"
+#include "Mouse.h"
 
-#define WINDOW_WIDTH 800
-#define WINDOW_HEIGHT 800
+int g_windowW = 800;
+int g_windowH = 800;
 
 namespace haru
 {
-	std::shared_ptr<Root> Root::load()
+	std::shared_ptr<Root> Root::Load()
 	{
-		std::shared_ptr<Root> rtn = std::make_shared<Root>();
-		rtn->active = false;
-		rtn->self = rtn;
+		std::shared_ptr<Root> m_rtn = std::make_shared<Root>();
+		m_rtn->m_active = false;
+		m_rtn->m_self = m_rtn;
 
 		if(SDL_Init( SDL_INIT_VIDEO ) < 0)
 		{
 			throw std::exception();
 		}
 
-		rtn->window = SDL_CreateWindow( "Haru Engine",
+		m_rtn->m_window = SDL_CreateWindow( "Haru Engine",
 			SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-			WINDOW_WIDTH, WINDOW_HEIGHT, 
+			g_windowW, g_windowH,
 			SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL );
 
-		if(!SDL_GL_CreateContext( rtn->window ))
+		if(!SDL_GL_CreateContext( m_rtn->m_window ))
 		{
 			throw std::exception();
 		}
@@ -34,87 +43,108 @@ namespace haru
 			throw std::exception();
 		}
 
-		rtn->device = alcOpenDevice(NULL);
+		m_rtn->m_device = alcOpenDevice(NULL);
 
-		if (!rtn->device)
+		if (!m_rtn->m_device)
 		{
 			throw std::exception();
 		}
 
-		rtn->context = alcCreateContext(rtn->device, NULL);
+		m_rtn->m_context = alcCreateContext( m_rtn->m_device, NULL);
 
-		if (!rtn->context)
+		if (!m_rtn->m_context)
 		{
-			alcCloseDevice(rtn->device);
+			alcCloseDevice( m_rtn->m_device);
 			throw std::exception();
 		}
 
-		if (!alcMakeContextCurrent(rtn->context))
+		if (!alcMakeContextCurrent( m_rtn->m_context))
 		{
-			alcDestroyContext(rtn->context);
-			alcCloseDevice(rtn->device);
+			alcDestroyContext( m_rtn->m_context);
+			alcCloseDevice( m_rtn->m_device);
 			throw std::exception();
 		}
 
-		return rtn;
+		return m_rtn;
 	}
 
-	void Root::start()
+	void Root::Start()
 	{
-		active = true;
+		m_active = true;
 
-		while(active)
+		glEnable( GL_CULL_FACE );
+		glFrontFace(GL_CCW);
+		glEnable( GL_DEPTH_TEST );
+
+		m_mouse = std::make_shared<Mouse>();
+
+		while(m_active)
 		{
-			SDL_Event event = { 0 };
+			SDL_Event m_event = { 0 };
 
-			while(SDL_PollEvent( &event ))
+			while(SDL_PollEvent( &m_event ))
 			{
-				if(event.type == SDL_QUIT)
+				if(m_event.type == SDL_QUIT)
 				{
-					active = true;
+					m_active = true;
 				}
+				
+				switch(m_event.type)
+				{
+				case SDL_MOUSEMOTION:
+					std::cout << m_event.motion.x << ", " << m_event.motion.y << std::endl;
+					break;
+				}
+
+				//m_mouse->MouseUpdate();
+
 			}
 
-			for(std::vector<std::shared_ptr<Object>>::iterator it = objects.begin(); 
-				it != objects.end(); it++)
+			for(std::vector<std::shared_ptr<Object>>::iterator it = m_objects.begin();
+				it != m_objects.end(); it++)
 			{
-				(*it)->tick();
+				(*it)->Tick();
 			}
 
+			SDL_GetWindowSize( m_window, &g_windowW, &g_windowH );
+			glViewport( 0, 0, g_windowW, g_windowH );
 			glClearColor( 0.0f, 0.0f, 0.3f, 1.0f );
-			glClear( GL_COLOR_BUFFER_BIT );
-;
-			for(std::vector<std::shared_ptr<Object>>::iterator it = objects.begin();
-				it != objects.end(); it++)
+			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+
+			for(std::vector<std::shared_ptr<Object>>::iterator it = m_objects.begin();
+				it != m_objects.end(); it++)
 			{
-				(*it)->display();
+				(*it)->Display();
 			}
 
-			SDL_GL_SwapWindow( window );
+			SDL_GL_SwapWindow( m_window );
 		}
+		SDL_DestroyWindow( m_window );
+		SDL_Quit();
 	}
 
-	void Root::finish()
+	void Root::Finish()
 	{
-		active = false;
+		m_active = false;
 	}
 
-	std::shared_ptr<Object> Root::addObject()
+	std::shared_ptr<Object> Root::AddObject()
 	{
-		std::shared_ptr<Object> rtn = std::make_shared<Object>();
-		objects.push_back( rtn );
-		rtn->self = rtn;
-		rtn->root = self;
+		std::shared_ptr<Object> m_rtn = std::make_shared<Object>();
+		m_objects.push_back( m_rtn );
+		m_rtn->m_self = m_rtn;
+		m_rtn->m_root = m_self;
 
-		return rtn;
+		return m_rtn;
 	}
 
-	std::shared_ptr<Domain> Root::domain()
+	std::shared_ptr<Domain> Root::Domain()
 	{
 		return 0;
 	}
 
-	std::shared_ptr<Keyboard> Root::keyboard()
+	std::shared_ptr<Keyboard> Root::Keyboard()
 	{
 		return 0;
 	}

@@ -1,11 +1,11 @@
 #include "Domain.h"
 
-float Domain::getDeltaTime()
+float Domain::GetDeltaTime()
 {
 	return 0;
 }
 
-float Domain::deltaTime()
+float Domain::DeltaTime()
 {
 	return 0;
 }
