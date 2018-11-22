@@ -1,0 +1,151 @@
+\hypertarget{classharu_1_1_vertex_array}{}\section{haru\+:\+:Vertex\+Array Class Reference}
+\label{classharu_1_1_vertex_array}\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+
+
+{\ttfamily \#include $<$Vertex\+Array.\+h$>$}
+
+
+
+Collaboration diagram for haru\+:\+:Vertex\+Array\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classharu_1_1_vertex_array__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classharu_1_1_vertex_array_a53d1c5c6eb05c265f05ed9d06d748f02}{Vertex\+Array}} ()
+\item 
+\mbox{\hyperlink{classharu_1_1_vertex_array_a8d90e298064690ca3e0ad7fc9aec81b6}{Vertex\+Array}} (std\+::string \+\_\+path)
+\item 
+void \mbox{\hyperlink{classharu_1_1_vertex_array_aef555fb0ec34f06ed93b9f0d489bf188}{Set\+Buffer}} (std\+::string \+\_\+attribute, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_buffer}{Vertex\+Buffer}} $>$ \+\_\+buffer)
+\item 
+int \mbox{\hyperlink{classharu_1_1_vertex_array_af444883400ad80eacbc8bf32d40a51e1}{Get\+Vertex\+Count}} ()
+\item 
+G\+Luint \mbox{\hyperlink{classharu_1_1_vertex_array_a9e0954bbf40bfd23997bd4a396e037c0}{Get\+Id}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classharu_1_1_vertex_array_a4881c24fdca7f802456d1b8823a0c4ce}{Split\+String\+Whitespace}} (std\+::string \&\+\_\+input, std\+::vector$<$ std\+::string $>$ \&\+\_\+output)
+\item 
+void \mbox{\hyperlink{classharu_1_1_vertex_array_a8ca455fffbc9f554851fe18eb8a26bfa}{Split\+String}} (std\+::string \&\+\_\+input, char \+\_\+splitter, std\+::vector$<$ std\+::string $>$ \&\+\_\+output)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \mbox{\hyperlink{classharu_1_1_vertex_array_a61e6c2025f2bb9da20280c6b607e4c22}{m\+\_\+id}}
+\item 
+bool \mbox{\hyperlink{classharu_1_1_vertex_array_a7cc151adcf4133de6d7130e206e08b9d}{m\+\_\+dirty}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_buffer}{Vertex\+Buffer}} $>$ $>$ \mbox{\hyperlink{classharu_1_1_vertex_array_a66f9492ccad01a67ed2dff56feefef46}{m\+\_\+buffers}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classharu_1_1_vertex_array_a53d1c5c6eb05c265f05ed9d06d748f02}\label{classharu_1_1_vertex_array_a53d1c5c6eb05c265f05ed9d06d748f02}} 
+\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}!Vertex\+Array@{Vertex\+Array}}
+\index{Vertex\+Array@{Vertex\+Array}!haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{Vertex\+Array()}{VertexArray()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily haru\+::\+Vertex\+Array\+::\+Vertex\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_vertex_array_a8d90e298064690ca3e0ad7fc9aec81b6}\label{classharu_1_1_vertex_array_a8d90e298064690ca3e0ad7fc9aec81b6}} 
+\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}!Vertex\+Array@{Vertex\+Array}}
+\index{Vertex\+Array@{Vertex\+Array}!haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{Vertex\+Array()}{VertexArray()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily haru\+::\+Vertex\+Array\+::\+Vertex\+Array (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+path }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classharu_1_1_vertex_array_a8d90e298064690ca3e0ad7fc9aec81b6_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classharu_1_1_vertex_array_a9e0954bbf40bfd23997bd4a396e037c0}\label{classharu_1_1_vertex_array_a9e0954bbf40bfd23997bd4a396e037c0}} 
+\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}!Get\+Id@{Get\+Id}}
+\index{Get\+Id@{Get\+Id}!haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{Get\+Id()}{GetId()}}
+{\footnotesize\ttfamily G\+Luint haru\+::\+Vertex\+Array\+::\+Get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_vertex_array_af444883400ad80eacbc8bf32d40a51e1}\label{classharu_1_1_vertex_array_af444883400ad80eacbc8bf32d40a51e1}} 
+\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}!Get\+Vertex\+Count@{Get\+Vertex\+Count}}
+\index{Get\+Vertex\+Count@{Get\+Vertex\+Count}!haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{Get\+Vertex\+Count()}{GetVertexCount()}}
+{\footnotesize\ttfamily int haru\+::\+Vertex\+Array\+::\+Get\+Vertex\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_vertex_array_aef555fb0ec34f06ed93b9f0d489bf188}\label{classharu_1_1_vertex_array_aef555fb0ec34f06ed93b9f0d489bf188}} 
+\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}!Set\+Buffer@{Set\+Buffer}}
+\index{Set\+Buffer@{Set\+Buffer}!haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{Set\+Buffer()}{SetBuffer()}}
+{\footnotesize\ttfamily void haru\+::\+Vertex\+Array\+::\+Set\+Buffer (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+attribute,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_buffer}{Vertex\+Buffer}} $>$}]{\+\_\+buffer }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classharu_1_1_vertex_array_aef555fb0ec34f06ed93b9f0d489bf188_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classharu_1_1_vertex_array_a8ca455fffbc9f554851fe18eb8a26bfa}\label{classharu_1_1_vertex_array_a8ca455fffbc9f554851fe18eb8a26bfa}} 
+\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}!Split\+String@{Split\+String}}
+\index{Split\+String@{Split\+String}!haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{Split\+String()}{SplitString()}}
+{\footnotesize\ttfamily void haru\+::\+Vertex\+Array\+::\+Split\+String (\begin{DoxyParamCaption}\item[{std\+::string \&}]{\+\_\+input,  }\item[{char}]{\+\_\+splitter,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{\+\_\+output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{classharu_1_1_vertex_array_a8ca455fffbc9f554851fe18eb8a26bfa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classharu_1_1_vertex_array_a4881c24fdca7f802456d1b8823a0c4ce}\label{classharu_1_1_vertex_array_a4881c24fdca7f802456d1b8823a0c4ce}} 
+\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}!Split\+String\+Whitespace@{Split\+String\+Whitespace}}
+\index{Split\+String\+Whitespace@{Split\+String\+Whitespace}!haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{Split\+String\+Whitespace()}{SplitStringWhitespace()}}
+{\footnotesize\ttfamily void haru\+::\+Vertex\+Array\+::\+Split\+String\+Whitespace (\begin{DoxyParamCaption}\item[{std\+::string \&}]{\+\_\+input,  }\item[{std\+::vector$<$ std\+::string $>$ \&}]{\+\_\+output }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classharu_1_1_vertex_array_a4881c24fdca7f802456d1b8823a0c4ce_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classharu_1_1_vertex_array_a66f9492ccad01a67ed2dff56feefef46}\label{classharu_1_1_vertex_array_a66f9492ccad01a67ed2dff56feefef46}} 
+\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}!m\+\_\+buffers@{m\+\_\+buffers}}
+\index{m\+\_\+buffers@{m\+\_\+buffers}!haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{m\+\_\+buffers}{m\_buffers}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_vertex_buffer}{Vertex\+Buffer}}$>$ $>$ haru\+::\+Vertex\+Array\+::m\+\_\+buffers\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_vertex_array_a7cc151adcf4133de6d7130e206e08b9d}\label{classharu_1_1_vertex_array_a7cc151adcf4133de6d7130e206e08b9d}} 
+\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}!m\+\_\+dirty@{m\+\_\+dirty}}
+\index{m\+\_\+dirty@{m\+\_\+dirty}!haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{m\+\_\+dirty}{m\_dirty}}
+{\footnotesize\ttfamily bool haru\+::\+Vertex\+Array\+::m\+\_\+dirty\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_vertex_array_a61e6c2025f2bb9da20280c6b607e4c22}\label{classharu_1_1_vertex_array_a61e6c2025f2bb9da20280c6b607e4c22}} 
+\index{haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}!m\+\_\+id@{m\+\_\+id}}
+\index{m\+\_\+id@{m\+\_\+id}!haru\+::\+Vertex\+Array@{haru\+::\+Vertex\+Array}}
+\subsubsection{\texorpdfstring{m\+\_\+id}{m\_id}}
+{\footnotesize\ttfamily G\+Luint haru\+::\+Vertex\+Array\+::m\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/haruengine/\mbox{\hyperlink{_vertex_array_8h}{Vertex\+Array.\+h}}\item 
+source/haruengine/\mbox{\hyperlink{_vertex_array_8cpp}{Vertex\+Array.\+cpp}}\end{DoxyCompactItemize}

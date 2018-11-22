@@ -50,6 +50,15 @@ contrib/stb_image/stb_image.cpp
 
 add_library(haruengine
 
+source/haruengine/GameManager.cpp
+source/haruengine/GameManager.h
+
+source/haruengine/Mesh.cpp
+source/haruengine/Mesh.h
+
+source/haruengine/Resource.cpp
+source/haruengine/Resource.h
+
 source/haruengine/Object.cpp
 source/haruengine/Object.h
 
@@ -109,6 +118,9 @@ resources/shaders/blur.vert
 
 resources/shaders/lightkeypass.frag
 resources/shaders/lightkeypass.vert
+
+resources/shaders/lighting.frag
+resources/shaders/lighting.vert
 
 resources/shaders/mergepass.frag
 resources/shaders/mergepass.vert

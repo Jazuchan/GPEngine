@@ -17,7 +17,8 @@ namespace haru
 		glBindTexture(GL_TEXTURE_2D, 0);
 	}
 
-	Texture::Texture( std::string _path )
+	//std::shared_ptr<Texture>
+	Texture::Texture(std::string _path)
 	{
 		int m_w = 0;
 		int m_h = 0;

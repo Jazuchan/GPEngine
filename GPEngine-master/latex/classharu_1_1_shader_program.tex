@@ -1,0 +1,204 @@
+\hypertarget{classharu_1_1_shader_program}{}\section{haru\+:\+:Shader\+Program Class Reference}
+\label{classharu_1_1_shader_program}\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+
+
+{\ttfamily \#include $<$Shader\+Program.\+h$>$}
+
+
+
+Collaboration diagram for haru\+:\+:Shader\+Program\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{classharu_1_1_shader_program__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classharu_1_1_shader_program_acfb9528364468c5cbabb1f581643ae25}{Shader\+Program}} (std\+::string \+\_\+vert, std\+::string \+\_\+frag)
+\item 
+void \mbox{\hyperlink{classharu_1_1_shader_program_ab23193ba8426b49073e64646b7de6320}{Draw}} ()
+\item 
+void \mbox{\hyperlink{classharu_1_1_shader_program_a6e322ac38c9358486ccee3c06aef4de1}{Draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}} $>$ \+\_\+render\+Texture)
+\item 
+void \mbox{\hyperlink{classharu_1_1_shader_program_af76596f322a345e67ad8ee1395cc76c4}{Draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_array}{Vertex\+Array}} $>$ \+\_\+vertex\+Array)
+\item 
+void \mbox{\hyperlink{classharu_1_1_shader_program_af06e97b4b8eec4d8fd197f58df319206}{Draw}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}} $>$ \+\_\+render\+Texture, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_array}{Vertex\+Array}} $>$ \+\_\+vertex\+Array)
+\item 
+void \mbox{\hyperlink{classharu_1_1_shader_program_a558038555953abdd400d17b6af6a821b}{Set\+Uniform}} (std\+::string \+\_\+uniform, glm\+::vec4 \+\_\+value)
+\item 
+void \mbox{\hyperlink{classharu_1_1_shader_program_abd818797df7d006a1d8d2646653e576a}{Set\+Uniform}} (std\+::string \+\_\+uniform, float \+\_\+value)
+\item 
+void \mbox{\hyperlink{classharu_1_1_shader_program_a6cdbf2ff9c5bce4b7b1c039a1d9af142}{Set\+Uniform}} (std\+::string \+\_\+uniform, int \+\_\+value)
+\item 
+void \mbox{\hyperlink{classharu_1_1_shader_program_a9d36534e1ffd87f185da4b2bb7945723}{Set\+Uniform}} (std\+::string \+\_\+uniform, glm\+::mat4 \+\_\+value)
+\item 
+void \mbox{\hyperlink{classharu_1_1_shader_program_a9ea7128d64215e9e79076a0b36a69849}{Set\+Uniform}} (std\+::string \+\_\+uniform, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_texture}{Texture}} $>$ \+\_\+texture)
+\item 
+void \mbox{\hyperlink{classharu_1_1_shader_program_a9534e78aa5537cf3e7f63a7c8d166ba7}{Set\+Viewport}} (glm\+::vec4 \+\_\+viewport)
+\item 
+G\+Luint \mbox{\hyperlink{classharu_1_1_shader_program_a6079bce91bd203b0915d974035701cfd}{Get\+Id}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+G\+Luint \mbox{\hyperlink{classharu_1_1_shader_program_a9aefbe81aaa09ee5d881c708d14c4175}{m\+\_\+id}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structharu_1_1_sampler}{Sampler}} $>$ \mbox{\hyperlink{classharu_1_1_shader_program_acb7b3e2ef877a1022fccf4951567d1bf}{m\+\_\+samplers}}
+\item 
+glm\+::vec4 \mbox{\hyperlink{classharu_1_1_shader_program_a2eb3daf1a2dc547187d934a5db92ab6a}{m\+\_\+viewport}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_array}{Vertex\+Array}} $>$ \mbox{\hyperlink{classharu_1_1_shader_program_a294aa6017a95424af663d11de22c8a30}{m\+\_\+simple\+Shape}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_buffer}{Vertex\+Buffer}} $>$ \mbox{\hyperlink{classharu_1_1_shader_program_a2c35054cf33234db86676f9c94bef3a6}{m\+\_\+positions}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_buffer}{Vertex\+Buffer}} $>$ \mbox{\hyperlink{classharu_1_1_shader_program_acbf6bb784e05081a29ef90a04ae2269d}{m\+\_\+tex\+Coords}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classharu_1_1_shader_program_acfb9528364468c5cbabb1f581643ae25}\label{classharu_1_1_shader_program_acfb9528364468c5cbabb1f581643ae25}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Shader\+Program@{Shader\+Program}}
+\index{Shader\+Program@{Shader\+Program}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Shader\+Program()}{ShaderProgram()}}
+{\footnotesize\ttfamily haru\+::\+Shader\+Program\+::\+Shader\+Program (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+vert,  }\item[{std\+::string}]{\+\_\+frag }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classharu_1_1_shader_program_ab23193ba8426b49073e64646b7de6320}\label{classharu_1_1_shader_program_ab23193ba8426b49073e64646b7de6320}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Draw@{Draw}}
+\index{Draw@{Draw}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily void haru\+::\+Shader\+Program\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classharu_1_1_shader_program_ab23193ba8426b49073e64646b7de6320_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classharu_1_1_shader_program_a6e322ac38c9358486ccee3c06aef4de1}\label{classharu_1_1_shader_program_a6e322ac38c9358486ccee3c06aef4de1}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Draw@{Draw}}
+\index{Draw@{Draw}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily void haru\+::\+Shader\+Program\+::\+Draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}} $>$}]{\+\_\+render\+Texture }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classharu_1_1_shader_program_a6e322ac38c9358486ccee3c06aef4de1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classharu_1_1_shader_program_af76596f322a345e67ad8ee1395cc76c4}\label{classharu_1_1_shader_program_af76596f322a345e67ad8ee1395cc76c4}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Draw@{Draw}}
+\index{Draw@{Draw}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily void haru\+::\+Shader\+Program\+::\+Draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_array}{Vertex\+Array}} $>$}]{\+\_\+vertex\+Array }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_af06e97b4b8eec4d8fd197f58df319206}\label{classharu_1_1_shader_program_af06e97b4b8eec4d8fd197f58df319206}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Draw@{Draw}}
+\index{Draw@{Draw}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily void haru\+::\+Shader\+Program\+::\+Draw (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}} $>$}]{\+\_\+render\+Texture,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_array}{Vertex\+Array}} $>$}]{\+\_\+vertex\+Array }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{classharu_1_1_shader_program_af06e97b4b8eec4d8fd197f58df319206_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classharu_1_1_shader_program_a6079bce91bd203b0915d974035701cfd}\label{classharu_1_1_shader_program_a6079bce91bd203b0915d974035701cfd}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Get\+Id@{Get\+Id}}
+\index{Get\+Id@{Get\+Id}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Get\+Id()}{GetId()}}
+{\footnotesize\ttfamily G\+Luint haru\+::\+Shader\+Program\+::\+Get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_a558038555953abdd400d17b6af6a821b}\label{classharu_1_1_shader_program_a558038555953abdd400d17b6af6a821b}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Set\+Uniform@{Set\+Uniform}}
+\index{Set\+Uniform@{Set\+Uniform}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Set\+Uniform()}{SetUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void haru\+::\+Shader\+Program\+::\+Set\+Uniform (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+uniform,  }\item[{glm\+::vec4}]{\+\_\+value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_abd818797df7d006a1d8d2646653e576a}\label{classharu_1_1_shader_program_abd818797df7d006a1d8d2646653e576a}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Set\+Uniform@{Set\+Uniform}}
+\index{Set\+Uniform@{Set\+Uniform}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Set\+Uniform()}{SetUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void haru\+::\+Shader\+Program\+::\+Set\+Uniform (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+uniform,  }\item[{float}]{\+\_\+value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_a6cdbf2ff9c5bce4b7b1c039a1d9af142}\label{classharu_1_1_shader_program_a6cdbf2ff9c5bce4b7b1c039a1d9af142}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Set\+Uniform@{Set\+Uniform}}
+\index{Set\+Uniform@{Set\+Uniform}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Set\+Uniform()}{SetUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void haru\+::\+Shader\+Program\+::\+Set\+Uniform (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+uniform,  }\item[{int}]{\+\_\+value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_a9d36534e1ffd87f185da4b2bb7945723}\label{classharu_1_1_shader_program_a9d36534e1ffd87f185da4b2bb7945723}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Set\+Uniform@{Set\+Uniform}}
+\index{Set\+Uniform@{Set\+Uniform}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Set\+Uniform()}{SetUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void haru\+::\+Shader\+Program\+::\+Set\+Uniform (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+uniform,  }\item[{glm\+::mat4}]{\+\_\+value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_a9ea7128d64215e9e79076a0b36a69849}\label{classharu_1_1_shader_program_a9ea7128d64215e9e79076a0b36a69849}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Set\+Uniform@{Set\+Uniform}}
+\index{Set\+Uniform@{Set\+Uniform}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Set\+Uniform()}{SetUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void haru\+::\+Shader\+Program\+::\+Set\+Uniform (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+uniform,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_texture}{Texture}} $>$}]{\+\_\+texture }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_a9534e78aa5537cf3e7f63a7c8d166ba7}\label{classharu_1_1_shader_program_a9534e78aa5537cf3e7f63a7c8d166ba7}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!Set\+Viewport@{Set\+Viewport}}
+\index{Set\+Viewport@{Set\+Viewport}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Set\+Viewport()}{SetViewport()}}
+{\footnotesize\ttfamily void haru\+::\+Shader\+Program\+::\+Set\+Viewport (\begin{DoxyParamCaption}\item[{glm\+::vec4}]{\+\_\+viewport }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classharu_1_1_shader_program_a9aefbe81aaa09ee5d881c708d14c4175}\label{classharu_1_1_shader_program_a9aefbe81aaa09ee5d881c708d14c4175}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!m\+\_\+id@{m\+\_\+id}}
+\index{m\+\_\+id@{m\+\_\+id}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+id}{m\_id}}
+{\footnotesize\ttfamily G\+Luint haru\+::\+Shader\+Program\+::m\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_a2c35054cf33234db86676f9c94bef3a6}\label{classharu_1_1_shader_program_a2c35054cf33234db86676f9c94bef3a6}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!m\+\_\+positions@{m\+\_\+positions}}
+\index{m\+\_\+positions@{m\+\_\+positions}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+positions}{m\_positions}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_vertex_buffer}{Vertex\+Buffer}}$>$ haru\+::\+Shader\+Program\+::m\+\_\+positions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_acb7b3e2ef877a1022fccf4951567d1bf}\label{classharu_1_1_shader_program_acb7b3e2ef877a1022fccf4951567d1bf}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!m\+\_\+samplers@{m\+\_\+samplers}}
+\index{m\+\_\+samplers@{m\+\_\+samplers}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+samplers}{m\_samplers}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structharu_1_1_sampler}{Sampler}}$>$ haru\+::\+Shader\+Program\+::m\+\_\+samplers\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_a294aa6017a95424af663d11de22c8a30}\label{classharu_1_1_shader_program_a294aa6017a95424af663d11de22c8a30}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!m\+\_\+simple\+Shape@{m\+\_\+simple\+Shape}}
+\index{m\+\_\+simple\+Shape@{m\+\_\+simple\+Shape}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+simple\+Shape}{m\_simpleShape}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_vertex_array}{Vertex\+Array}}$>$ haru\+::\+Shader\+Program\+::m\+\_\+simple\+Shape\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_acbf6bb784e05081a29ef90a04ae2269d}\label{classharu_1_1_shader_program_acbf6bb784e05081a29ef90a04ae2269d}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!m\+\_\+tex\+Coords@{m\+\_\+tex\+Coords}}
+\index{m\+\_\+tex\+Coords@{m\+\_\+tex\+Coords}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+tex\+Coords}{m\_texCoords}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_vertex_buffer}{Vertex\+Buffer}}$>$ haru\+::\+Shader\+Program\+::m\+\_\+tex\+Coords\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_shader_program_a2eb3daf1a2dc547187d934a5db92ab6a}\label{classharu_1_1_shader_program_a2eb3daf1a2dc547187d934a5db92ab6a}} 
+\index{haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}!m\+\_\+viewport@{m\+\_\+viewport}}
+\index{m\+\_\+viewport@{m\+\_\+viewport}!haru\+::\+Shader\+Program@{haru\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+viewport}{m\_viewport}}
+{\footnotesize\ttfamily glm\+::vec4 haru\+::\+Shader\+Program\+::m\+\_\+viewport\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/haruengine/\mbox{\hyperlink{_shader_program_8h}{Shader\+Program.\+h}}\item 
+source/haruengine/\mbox{\hyperlink{_shader_program_8cpp}{Shader\+Program.\+cpp}}\end{DoxyCompactItemize}

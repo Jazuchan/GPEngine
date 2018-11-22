@@ -17,10 +17,7 @@ namespace haru
 	  int m_windowW = 800;
 	  int m_windowH = 800;
 	  float angle = 0;
-	  int m_randX = rand() % 30;
-	  int m_randY = rand() % 30;
-	  int x = 0;
-	  int y = 0;
+	  
 
 	private:
 	  void OnDisplay();

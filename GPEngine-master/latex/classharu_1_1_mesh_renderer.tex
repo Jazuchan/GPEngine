@@ -1,0 +1,216 @@
+\hypertarget{classharu_1_1_mesh_renderer}{}\section{haru\+:\+:Mesh\+Renderer Class Reference}
+\label{classharu_1_1_mesh_renderer}\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+
+
+{\ttfamily \#include $<$Mesh\+Renderer.\+h$>$}
+
+
+
+Inheritance diagram for haru\+:\+:Mesh\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classharu_1_1_mesh_renderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for haru\+:\+:Mesh\+Renderer\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classharu_1_1_mesh_renderer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classharu_1_1_mesh_renderer_a5a6a5b945fc7560d166e9d16058aec53}{On\+Init}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classharu_1_1_mesh_renderer_a30ea5ddf109ff42564c5eecfb73d4b4f}{m\+\_\+windowW}} = 800
+\item 
+int \mbox{\hyperlink{classharu_1_1_mesh_renderer_a17e10695dd67e9094bd28c110231082c}{m\+\_\+windowH}} = 800
+\item 
+float \mbox{\hyperlink{classharu_1_1_mesh_renderer_ad1881dc8b63b1824fadc85436624241c}{angle}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classharu_1_1_mesh_renderer_ac927c9cc1d392ca8305ca995ddc0b7a6}{On\+Display}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_shader_program}{Shader\+Program}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_a362bf54c45c36b194f1421ffc154f034}{m\+\_\+shader}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_shader_program}{Shader\+Program}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_a1b7b13260f00ea7e57df2d7c78c862bc}{m\+\_\+lightkey\+Shader}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_shader_program}{Shader\+Program}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_a08d71f5b79e9292aa3123443a4daa621}{m\+\_\+null\+Shader}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_shader_program}{Shader\+Program}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_afcc5562d658a94ec8905e590e9a41973}{m\+\_\+blur\+Shader}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_shader_program}{Shader\+Program}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_ae91deec127f7cf0093a6bf99e97f9bba}{m\+\_\+merge\+Shader}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_acf20639ec4df5f7aec8324c53d9cea6b}{m\+\_\+rt}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_a933fb51943b65589f92e0c750d4e0e9e}{m\+\_\+lightkey\+Rt}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_af06d5e4929335a9681cb87cdb1a4537a}{m\+\_\+blur\+Rt}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_a7e980792681d9b28915b27f46dfa99ac}{m\+\_\+blur2\+Rt}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_a457ee3e43f876531601198f3a2a11363}{m\+\_\+blur3\+Rt}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_a5cfa897f6d0aeb687f1b6e091c6c079e}{m\+\_\+merge\+Rt}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_texture}{Texture}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_abea78715a7752ce3ea0311f89ffcbbc9}{m\+\_\+texture}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_texture}{Texture}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_a9c59297b0cbcc1e13adfdebbb6edcdcd}{m\+\_\+hall\+Tex}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_array}{Vertex\+Array}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_a8911a9066c7d9ddbf87126d5dccb2246}{m\+\_\+cube}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_vertex_array}{Vertex\+Array}} $>$ \mbox{\hyperlink{classharu_1_1_mesh_renderer_a84b8747803ab80c6b1f827f7c8c2ac5a}{m\+\_\+hall\+Shape}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_ac927c9cc1d392ca8305ca995ddc0b7a6}\label{classharu_1_1_mesh_renderer_ac927c9cc1d392ca8305ca995ddc0b7a6}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!On\+Display@{On\+Display}}
+\index{On\+Display@{On\+Display}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{On\+Display()}{OnDisplay()}}
+{\footnotesize\ttfamily void haru\+::\+Mesh\+Renderer\+::\+On\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classharu_1_1_segment_a5bb0f5cf9aecda465804016d3ed4092c}{haru\+::\+Segment}}.
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a5a6a5b945fc7560d166e9d16058aec53}\label{classharu_1_1_mesh_renderer_a5a6a5b945fc7560d166e9d16058aec53}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!On\+Init@{On\+Init}}
+\index{On\+Init@{On\+Init}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{On\+Init()}{OnInit()}}
+{\footnotesize\ttfamily void haru\+::\+Mesh\+Renderer\+::\+On\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classharu_1_1_segment_adc41c8e5769e0057ade94abf669c6dbc}{haru\+::\+Segment}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_ad1881dc8b63b1824fadc85436624241c}\label{classharu_1_1_mesh_renderer_ad1881dc8b63b1824fadc85436624241c}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!angle@{angle}}
+\index{angle@{angle}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily float haru\+::\+Mesh\+Renderer\+::angle = 0}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a7e980792681d9b28915b27f46dfa99ac}\label{classharu_1_1_mesh_renderer_a7e980792681d9b28915b27f46dfa99ac}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+blur2\+Rt@{m\+\_\+blur2\+Rt}}
+\index{m\+\_\+blur2\+Rt@{m\+\_\+blur2\+Rt}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+blur2\+Rt}{m\_blur2Rt}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+blur2\+Rt\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a457ee3e43f876531601198f3a2a11363}\label{classharu_1_1_mesh_renderer_a457ee3e43f876531601198f3a2a11363}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+blur3\+Rt@{m\+\_\+blur3\+Rt}}
+\index{m\+\_\+blur3\+Rt@{m\+\_\+blur3\+Rt}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+blur3\+Rt}{m\_blur3Rt}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+blur3\+Rt\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_af06d5e4929335a9681cb87cdb1a4537a}\label{classharu_1_1_mesh_renderer_af06d5e4929335a9681cb87cdb1a4537a}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+blur\+Rt@{m\+\_\+blur\+Rt}}
+\index{m\+\_\+blur\+Rt@{m\+\_\+blur\+Rt}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+blur\+Rt}{m\_blurRt}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+blur\+Rt\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_afcc5562d658a94ec8905e590e9a41973}\label{classharu_1_1_mesh_renderer_afcc5562d658a94ec8905e590e9a41973}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+blur\+Shader@{m\+\_\+blur\+Shader}}
+\index{m\+\_\+blur\+Shader@{m\+\_\+blur\+Shader}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+blur\+Shader}{m\_blurShader}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_shader_program}{Shader\+Program}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+blur\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a8911a9066c7d9ddbf87126d5dccb2246}\label{classharu_1_1_mesh_renderer_a8911a9066c7d9ddbf87126d5dccb2246}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+cube@{m\+\_\+cube}}
+\index{m\+\_\+cube@{m\+\_\+cube}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+cube}{m\_cube}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_vertex_array}{Vertex\+Array}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+cube\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a84b8747803ab80c6b1f827f7c8c2ac5a}\label{classharu_1_1_mesh_renderer_a84b8747803ab80c6b1f827f7c8c2ac5a}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+hall\+Shape@{m\+\_\+hall\+Shape}}
+\index{m\+\_\+hall\+Shape@{m\+\_\+hall\+Shape}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+hall\+Shape}{m\_hallShape}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_vertex_array}{Vertex\+Array}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+hall\+Shape\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a9c59297b0cbcc1e13adfdebbb6edcdcd}\label{classharu_1_1_mesh_renderer_a9c59297b0cbcc1e13adfdebbb6edcdcd}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+hall\+Tex@{m\+\_\+hall\+Tex}}
+\index{m\+\_\+hall\+Tex@{m\+\_\+hall\+Tex}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+hall\+Tex}{m\_hallTex}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_texture}{Texture}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+hall\+Tex\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a933fb51943b65589f92e0c750d4e0e9e}\label{classharu_1_1_mesh_renderer_a933fb51943b65589f92e0c750d4e0e9e}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+lightkey\+Rt@{m\+\_\+lightkey\+Rt}}
+\index{m\+\_\+lightkey\+Rt@{m\+\_\+lightkey\+Rt}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+lightkey\+Rt}{m\_lightkeyRt}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+lightkey\+Rt\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a1b7b13260f00ea7e57df2d7c78c862bc}\label{classharu_1_1_mesh_renderer_a1b7b13260f00ea7e57df2d7c78c862bc}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+lightkey\+Shader@{m\+\_\+lightkey\+Shader}}
+\index{m\+\_\+lightkey\+Shader@{m\+\_\+lightkey\+Shader}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+lightkey\+Shader}{m\_lightkeyShader}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_shader_program}{Shader\+Program}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+lightkey\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a5cfa897f6d0aeb687f1b6e091c6c079e}\label{classharu_1_1_mesh_renderer_a5cfa897f6d0aeb687f1b6e091c6c079e}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+merge\+Rt@{m\+\_\+merge\+Rt}}
+\index{m\+\_\+merge\+Rt@{m\+\_\+merge\+Rt}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+merge\+Rt}{m\_mergeRt}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+merge\+Rt\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_ae91deec127f7cf0093a6bf99e97f9bba}\label{classharu_1_1_mesh_renderer_ae91deec127f7cf0093a6bf99e97f9bba}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+merge\+Shader@{m\+\_\+merge\+Shader}}
+\index{m\+\_\+merge\+Shader@{m\+\_\+merge\+Shader}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+merge\+Shader}{m\_mergeShader}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_shader_program}{Shader\+Program}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+merge\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a08d71f5b79e9292aa3123443a4daa621}\label{classharu_1_1_mesh_renderer_a08d71f5b79e9292aa3123443a4daa621}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+null\+Shader@{m\+\_\+null\+Shader}}
+\index{m\+\_\+null\+Shader@{m\+\_\+null\+Shader}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+null\+Shader}{m\_nullShader}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_shader_program}{Shader\+Program}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+null\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_acf20639ec4df5f7aec8324c53d9cea6b}\label{classharu_1_1_mesh_renderer_acf20639ec4df5f7aec8324c53d9cea6b}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+rt@{m\+\_\+rt}}
+\index{m\+\_\+rt@{m\+\_\+rt}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+rt}{m\_rt}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_render_texture}{Render\+Texture}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+rt\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a362bf54c45c36b194f1421ffc154f034}\label{classharu_1_1_mesh_renderer_a362bf54c45c36b194f1421ffc154f034}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+shader@{m\+\_\+shader}}
+\index{m\+\_\+shader@{m\+\_\+shader}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+shader}{m\_shader}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_shader_program}{Shader\+Program}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+shader\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_abea78715a7752ce3ea0311f89ffcbbc9}\label{classharu_1_1_mesh_renderer_abea78715a7752ce3ea0311f89ffcbbc9}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+texture@{m\+\_\+texture}}
+\index{m\+\_\+texture@{m\+\_\+texture}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+texture}{m\_texture}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_texture}{Texture}}$>$ haru\+::\+Mesh\+Renderer\+::m\+\_\+texture\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a17e10695dd67e9094bd28c110231082c}\label{classharu_1_1_mesh_renderer_a17e10695dd67e9094bd28c110231082c}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+windowH@{m\+\_\+windowH}}
+\index{m\+\_\+windowH@{m\+\_\+windowH}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+windowH}{m\_windowH}}
+{\footnotesize\ttfamily int haru\+::\+Mesh\+Renderer\+::m\+\_\+windowH = 800}
+
+\mbox{\Hypertarget{classharu_1_1_mesh_renderer_a30ea5ddf109ff42564c5eecfb73d4b4f}\label{classharu_1_1_mesh_renderer_a30ea5ddf109ff42564c5eecfb73d4b4f}} 
+\index{haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}!m\+\_\+windowW@{m\+\_\+windowW}}
+\index{m\+\_\+windowW@{m\+\_\+windowW}!haru\+::\+Mesh\+Renderer@{haru\+::\+Mesh\+Renderer}}
+\subsubsection{\texorpdfstring{m\+\_\+windowW}{m\_windowW}}
+{\footnotesize\ttfamily int haru\+::\+Mesh\+Renderer\+::m\+\_\+windowW = 800}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/haruengine/\mbox{\hyperlink{_mesh_renderer_8h}{Mesh\+Renderer.\+h}}\item 
+source/haruengine/\mbox{\hyperlink{_mesh_renderer_8cpp}{Mesh\+Renderer.\+cpp}}\end{DoxyCompactItemize}

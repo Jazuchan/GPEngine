@@ -1,0 +1,143 @@
+\hypertarget{classharu_1_1_object}{}\section{haru\+:\+:Object Class Reference}
+\label{classharu_1_1_object}\index{haru\+::\+Object@{haru\+::\+Object}}
+
+
+{\ttfamily \#include $<$Object.\+h$>$}
+
+
+
+Collaboration diagram for haru\+:\+:Object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{classharu_1_1_object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classharu_1_1_object_a7e92cffe420755e9385ddf3471a5bded}{Get\+Segment}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classharu_1_1_object_ad285384303303dd6b281a570810f18ca}{Add\+Segment}} ()
+\item 
+{\footnotesize template$<$typename T , typename A $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classharu_1_1_object_a267199c40485c94b3bdc180d397a05ec}{Add\+Segment}} (A a)
+\item 
+{\footnotesize template$<$typename T , typename A , typename B $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classharu_1_1_object_a31a365466f2ea7b3a0b41d1942f29f59}{Add\+Segment}} (A a, B b)
+\item 
+{\footnotesize template$<$typename T , typename A , typename B , typename C $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classharu_1_1_object_afa6249bdd2fe914f724289884ddd5a51}{Add\+Segment}} (A a, B b, C c)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_root}{Root}} $>$ \mbox{\hyperlink{classharu_1_1_object_a4c4a67d8ba840d295876f80a12163281}{Get\+Root}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classharu_1_1_object_a38daa375a6573f00fa150848fc3a6dde}{Tick}} ()
+\item 
+void \mbox{\hyperlink{classharu_1_1_object_a18e746943f998314aa27ffb96dac71cb}{Display}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_segment}{Segment}} $>$ $>$ \mbox{\hyperlink{classharu_1_1_object_a657dae7e9caa350f40aac59d5c734ad1}{m\+\_\+segments}}
+\item 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_root}{Root}} $>$ \mbox{\hyperlink{classharu_1_1_object_a46facc31fd20aa99a248e4bdb063a043}{m\+\_\+root}}
+\item 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_object}{Object}} $>$ \mbox{\hyperlink{classharu_1_1_object_ae204b014fc8c7bedc74508da20420769}{m\+\_\+self}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classharu_1_1_object_a4966338964dbcd90cba2a6b4bd1b3521}{Root}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classharu_1_1_object_ad285384303303dd6b281a570810f18ca}\label{classharu_1_1_object_ad285384303303dd6b281a570810f18ca}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!Add\+Segment@{Add\+Segment}}
+\index{Add\+Segment@{Add\+Segment}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{Add\+Segment()}{AddSegment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ haru\+::\+Object\+::\+Add\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classharu_1_1_object_a267199c40485c94b3bdc180d397a05ec}\label{classharu_1_1_object_a267199c40485c94b3bdc180d397a05ec}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!Add\+Segment@{Add\+Segment}}
+\index{Add\+Segment@{Add\+Segment}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{Add\+Segment()}{AddSegment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename A $>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ haru\+::\+Object\+::\+Add\+Segment (\begin{DoxyParamCaption}\item[{A}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classharu_1_1_object_a31a365466f2ea7b3a0b41d1942f29f59}\label{classharu_1_1_object_a31a365466f2ea7b3a0b41d1942f29f59}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!Add\+Segment@{Add\+Segment}}
+\index{Add\+Segment@{Add\+Segment}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{Add\+Segment()}{AddSegment()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename A , typename B $>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ haru\+::\+Object\+::\+Add\+Segment (\begin{DoxyParamCaption}\item[{A}]{a,  }\item[{B}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classharu_1_1_object_afa6249bdd2fe914f724289884ddd5a51}\label{classharu_1_1_object_afa6249bdd2fe914f724289884ddd5a51}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!Add\+Segment@{Add\+Segment}}
+\index{Add\+Segment@{Add\+Segment}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{Add\+Segment()}{AddSegment()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T , typename A , typename B , typename C $>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ haru\+::\+Object\+::\+Add\+Segment (\begin{DoxyParamCaption}\item[{A}]{a,  }\item[{B}]{b,  }\item[{C}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classharu_1_1_object_a18e746943f998314aa27ffb96dac71cb}\label{classharu_1_1_object_a18e746943f998314aa27ffb96dac71cb}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!Display@{Display}}
+\index{Display@{Display}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{Display()}{Display()}}
+{\footnotesize\ttfamily void haru\+::\+Object\+::\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_object_a4c4a67d8ba840d295876f80a12163281}\label{classharu_1_1_object_a4c4a67d8ba840d295876f80a12163281}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!Get\+Root@{Get\+Root}}
+\index{Get\+Root@{Get\+Root}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{Get\+Root()}{GetRoot()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classharu_1_1_root}{Root}} $>$ haru\+::\+Object\+::\+Get\+Root (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classharu_1_1_object_a7e92cffe420755e9385ddf3471a5bded}\label{classharu_1_1_object_a7e92cffe420755e9385ddf3471a5bded}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!Get\+Segment@{Get\+Segment}}
+\index{Get\+Segment@{Get\+Segment}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{Get\+Segment()}{GetSegment()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ haru\+::\+Object\+::\+Get\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classharu_1_1_object_a38daa375a6573f00fa150848fc3a6dde}\label{classharu_1_1_object_a38daa375a6573f00fa150848fc3a6dde}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!Tick@{Tick}}
+\index{Tick@{Tick}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily void haru\+::\+Object\+::\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classharu_1_1_object_a4966338964dbcd90cba2a6b4bd1b3521}\label{classharu_1_1_object_a4966338964dbcd90cba2a6b4bd1b3521}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!Root@{Root}}
+\index{Root@{Root}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{Root}{Root}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classharu_1_1_root}{Root}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classharu_1_1_object_a46facc31fd20aa99a248e4bdb063a043}\label{classharu_1_1_object_a46facc31fd20aa99a248e4bdb063a043}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!m\+\_\+root@{m\+\_\+root}}
+\index{m\+\_\+root@{m\+\_\+root}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{m\+\_\+root}{m\_root}}
+{\footnotesize\ttfamily std\+::weak\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_root}{Root}}$>$ haru\+::\+Object\+::m\+\_\+root\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_object_a657dae7e9caa350f40aac59d5c734ad1}\label{classharu_1_1_object_a657dae7e9caa350f40aac59d5c734ad1}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!m\+\_\+segments@{m\+\_\+segments}}
+\index{m\+\_\+segments@{m\+\_\+segments}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{m\+\_\+segments}{m\_segments}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_segment}{Segment}}$>$ $>$ haru\+::\+Object\+::m\+\_\+segments\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classharu_1_1_object_ae204b014fc8c7bedc74508da20420769}\label{classharu_1_1_object_ae204b014fc8c7bedc74508da20420769}} 
+\index{haru\+::\+Object@{haru\+::\+Object}!m\+\_\+self@{m\+\_\+self}}
+\index{m\+\_\+self@{m\+\_\+self}!haru\+::\+Object@{haru\+::\+Object}}
+\subsubsection{\texorpdfstring{m\+\_\+self}{m\_self}}
+{\footnotesize\ttfamily std\+::weak\+\_\+ptr$<$\mbox{\hyperlink{classharu_1_1_object}{Object}}$>$ haru\+::\+Object\+::m\+\_\+self\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+source/haruengine/\mbox{\hyperlink{_object_8h}{Object.\+h}}\item 
+source/haruengine/\mbox{\hyperlink{_object_8cpp}{Object.\+cpp}}\end{DoxyCompactItemize}

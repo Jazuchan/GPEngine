@@ -95,7 +95,7 @@ namespace haru
 					std::cout << m_event.motion.x << ", " << m_event.motion.y << std::endl;
 					break;
 				}
-
+				
 				//m_mouse->MouseUpdate();
 
 			}
